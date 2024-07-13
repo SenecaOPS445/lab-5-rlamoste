@@ -3,10 +3,10 @@
 
 def read_file_string(file_name):
     # Takes file_name as string for a file name, returns its entire contents as a string
-    f = open('data.txt', 'r')
+#    file_name = sys.argv[1]
+    f = open(file_name, 'r')
     read_data = f.read()   
     f.close() 
-    print(read_data)
     return read_data
 
 def read_file_list(file_name):
